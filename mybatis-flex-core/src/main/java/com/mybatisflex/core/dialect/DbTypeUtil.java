@@ -136,6 +136,8 @@ public class DbTypeUtil {
             return DbType.SQLSERVER_2005;
         } else if (jdbcUrl.contains(":postgresql:")) {
             return DbType.POSTGRE_SQL;
+        } else if (jdbcUrl.contains(":vastbase:")) {
+            return DbType.POSTGRE_SQL;
         } else if (jdbcUrl.contains(":hsqldb:")) {
             return DbType.HSQL;
         } else if (jdbcUrl.contains(":db2:")) {
